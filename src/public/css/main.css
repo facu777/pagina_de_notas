@@ -1,0 +1,12 @@
+body{
+    background: sandybrown;
+}
+h1,p{
+    color: black
+}
+span a{
+    text-decoration: none;
+}
+.logo{
+    width: 50%;
+}
