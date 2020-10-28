@@ -8,6 +8,8 @@ const NoteSchema =new Schema({
     description: {
         type: String,
         required: true
+    },img:{
+        type: String
     },
     user: {
         type: String,

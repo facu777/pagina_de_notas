@@ -11,7 +11,7 @@ const path = require('path');
 const app = express();
 require('./config/passport');
 // seting port, if i have a enviroment variable, mi app will use it. Else it'll use 3000
-app.set('port', process.env.PORT||3000);
+app.set('port', process.env.PORT||5000);
 //views
 app.set('views',path.join(__dirname,'views'));
 // engine setting

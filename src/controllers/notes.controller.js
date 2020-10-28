@@ -9,13 +9,14 @@ notesCtrl.renderNoteForm = (req, res) => {
 };
 
 notesCtrl.createNewNote = async (req, res) => {
-    const { title, description } = req.body;
+    const { title, description,img } = req.body;
     const newNote = new Note({ title, description });
     newNote.user = req.user.id;
+    if (img){newNote.img = img}
+    console.log(newNote.img)
     await newNote.save();
     req.flash('success_msg','Note added succesfully');
     res.redirect("/notes");
-    
 };
 
 notesCtrl.renderNotes = async (req, res) => {

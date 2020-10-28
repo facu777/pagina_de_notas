@@ -10,3 +10,37 @@ span a{
 .logo{
     width: 50%;
 }
+.boton {
+    border-radius: 50%;
+}
+.boton:hover {
+    animation-name: rainbow;
+    animation-duration: 1s;
+    
+}
+@keyframes rainbow {
+    
+      100% {
+        transform: rotateZ(90deg);
+      }
+
+}
+.button-group .button {
+    background-color: #fffffc; /* Green */
+    border: 1px solid #fff;
+    color: black;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  .button-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  .button-group .button:hover {
+    background-color: gray;
+  }
